@@ -276,7 +276,7 @@ section {
 
 /*EXPERICANCE SECTION*/
 
-#experience {
+#experience, #skills {
     position: relative;
 }
 
@@ -386,4 +386,16 @@ footer {
 }
 footer p {
     text-align: center;
+}
+
+/* Animations */
+.animate-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-element.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
